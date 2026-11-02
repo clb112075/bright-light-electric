@@ -40,6 +40,15 @@
     .checks{list-style:none;padding:0;margin:22px 0 0}.checks li{margin:12px 0;font-weight:700}.checks li:before{content:"✓";color:#bd841e;font-weight:900;margin-right:10px}
     .about-copy p{color:var(--muted)}.about-copy .eyebrow{color:#b17b17}
     .service-area{background:#f5f7fa;text-align:center}.area-pill{display:inline-block;background:white;border:1px solid #e0e6ed;padding:11px 17px;border-radius:30px;margin:7px;color:var(--blue);font-weight:700}
+
+    .estimate{background:#fff}.estimate-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:42px;align-items:start}
+    .estimate-form{background:#f5f7fa;border:1px solid #e3e9f0;border-radius:15px;padding:28px}
+    .estimate-form label{display:block;font-weight:700;color:var(--navy);font-size:.92rem;margin:0 0 6px}
+    .estimate-form input,.estimate-form select,.estimate-form textarea{width:100%;padding:12px 13px;border:1px solid #cbd5e1;border-radius:7px;font:inherit;background:#fff;margin:0 0 15px;color:var(--ink)}
+    .estimate-form textarea{min-height:120px;resize:vertical}.estimate-form input:focus,.estimate-form select:focus,.estimate-form textarea:focus{outline:2px solid #f4b942;border-color:#b17b17}
+    .estimate-form .btn{width:100%;cursor:pointer;font:inherit}.form-note{font-size:.82rem;color:var(--muted);margin:12px 0 0}
+    @media(max-width:800px){.estimate-grid{grid-template-columns:1fr}}
+
     .contact{background:linear-gradient(110deg,#071a33,#103b69);color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
     .contact h2{color:white}.contact p{color:#d4dfeb}.contact-details{display:grid;gap:14px;margin-top:25px}.contact-line{display:flex;gap:13px;align-items:center;font-weight:700}.contact-line b{color:var(--gold);font-size:1.25rem;width:25px}
     .contact-box{background:white;color:var(--ink);padding:30px;border-radius:15px}.contact-box h3{margin:0 0 8px;color:var(--navy);font-size:1.45rem}.contact-box p{color:var(--muted);margin:0 0 18px}.contact-box .btn{width:100%;margin-top:10px}
@@ -52,7 +61,7 @@
   <div class="topbar"><div class="wrap"><span>Serving Dayton, Ohio &amp; surrounding communities</span><span>Electrical service for homes and businesses</span></div></div>
   <header><div class="wrap nav">
     <a class="brand" href="#home"><span class="logo">⚡</span><span>BRIGHT LIGHT ELECTRIC<small>POWERING WHAT MATTERS</small></span></a>
-    <nav><a href="#services">Services</a><a href="#about">About</a><a href="#area">Service Area</a><a href="#contact">Contact</a></nav>
+    <nav><a href="#services">Services</a><a href="#about">About</a><a href="#estimate">Request an Estimate</a><a href="#contact">Contact</a></nav>
     <a class="btn" href="tel:+19374246295">Call Now</a>
   </div></header>
   <main>
@@ -80,6 +89,26 @@
       <div class="about-copy"><div class="eyebrow">Why Contact Bright Light Electric</div><h2 class="section-title">A brighter experience from start to finish.</h2><p>Your electrical project deserves careful attention and a solution that fits your property. Bright Light Electric works with residential and commercial customers in the Dayton area.</p><ul class="checks"><li>Residential and commercial service</li><li>Clear, direct communication</li><li>Local service throughout the Dayton area</li><li>One easy call to get started</li></ul></div>
     </div></section>
     <section class="service-area" id="area"><div class="wrap"><div class="section-head"><div class="eyebrow">Where We Work</div><h2 class="section-title">Proud to serve the Dayton area</h2><p>Bright Light Electric serves Dayton, Ohio and surrounding communities. Contact us to ask about service in your area.</p></div><span class="area-pill">Dayton</span><span class="area-pill">Kettering</span><span class="area-pill">Beavercreek</span><span class="area-pill">Huber Heights</span><span class="area-pill">Centerville</span><span class="area-pill">Surrounding communities</span></div></section>
+
+    <section class="estimate" id="estimate"><div class="wrap estimate-grid">
+      <div><div class="eyebrow" style="color:#b17b17">Start a Conversation</div><h2 class="section-title">Request an estimate</h2>
+        <p style="color:var(--muted)">Tell us a little about the electrical work you have in mind. We'll prepare an email with your details so you can send your request directly to Bright Light Electric.</p>
+        <ul class="checks"><li>Tell us what kind of work you need</li><li>Share the best way to reach you</li><li>Include details about your project</li></ul>
+      </div>
+      <form class="estimate-form" id="estimateForm">
+        <label for="customerName">Your name *</label><input id="customerName" name="name" autocomplete="name" required placeholder="Full name">
+        <label for="customerPhone">Phone number *</label><input id="customerPhone" name="phone" type="tel" autocomplete="tel" required placeholder="Best number to reach you">
+        <label for="customerEmail">Email address</label><input id="customerEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+        <label for="serviceType">What do you need help with? *</label>
+        <select id="serviceType" name="service" required>
+          <option value="">Choose a service</option><option>Residential electrical</option><option>Commercial electrical</option><option>Lighting or fixtures</option><option>Outlets or switches</option><option>Electrical upgrade</option><option>Repair or troubleshooting</option><option>Other / Not sure</option>
+        </select>
+        <label for="projectDetails">Project details *</label><textarea id="projectDetails" name="details" required placeholder="Describe the work, location, and any helpful details..."></textarea>
+        <button class="btn" type="submit">Prepare Estimate Request Email</button>
+        <p class="form-note">This form opens your email app with your request filled in. It does not submit or store information on this website.</p>
+      </form>
+    </div></section>
+
     <section class="contact" id="contact"><div class="wrap contact-grid">
       <div><div class="eyebrow">Let's Get Your Project Moving</div><h2 class="section-title">Need an electrician?</h2><p>Call or email Bright Light Electric to discuss your residential or commercial electrical needs in the Dayton area.</p>
         <div class="contact-details"><div class="contact-line"><b>☎</b><a href="tel:+19374246295">(937) 424-6295</a></div><div class="contact-line"><b>✉</b><a href="mailto:clb112075@gmail.com">clb112075@gmail.com</a></div><div class="contact-line"><b>⌖</b> Dayton, Ohio &amp; surrounding areas</div></div>
@@ -88,6 +117,21 @@
     </div></section>
   </main>
   <footer><div class="wrap foot"><span>© <span id="year"></span> Bright Light Electric. All rights reserved.</span><span>Dayton, Ohio · Residential &amp; Commercial Electrical</span></div></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('estimateForm').addEventListener('submit',function(event){
+      event.preventDefault();
+      const data=new FormData(this);
+      const subject=encodeURIComponent('Estimate Request - Bright Light Electric');
+      const body=encodeURIComponent(
+        'Name: '+data.get('name')+'\\n'+
+        'Phone: '+data.get('phone')+'\\n'+
+        'Email: '+(data.get('email')||'Not provided')+'\\n'+
+        'Service: '+data.get('service')+'\\n\\n'+
+        'Project details:\\n'+data.get('details')
+      );
+      window.location.href='mailto:clb112075@gmail.com?subject='+subject+'&body='+body;
+    });
+  </script>
 </body>
 </html>

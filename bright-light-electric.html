@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a2c">
+  <title>Bright Light Electric | Residential & Commercial Electrical Services</title>
+  <meta name="description" content="Bright Light Electric provides residential and commercial electrical services. Contact us to discuss your electrical project and request an estimate.">
+  <style>
+    :root { --navy:#071a2c; --navy2:#0d2943; --gold:#ffc928; --white:#fff; --muted:#c7d3df; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:#172333; line-height:1.6; }
+    a { color:inherit; }
+    .topbar { background:#04111e; color:#eaf1f7; text-align:center; padding:9px 16px; font-size:.9rem; }
+    header { background:var(--navy); color:var(--white); }
+    .nav { max-width:1120px; margin:auto; padding:18px 22px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; font-size:1.2rem; letter-spacing:.3px; }
+    .bolt { width:43px; height:43px; display:grid; place-items:center; background:var(--gold); color:var(--navy); border-radius:12px; font-size:1.7rem; }
+    .navlinks { display:flex; gap:22px; align-items:center; }
+    .navlinks a { text-decoration:none; font-weight:700; font-size:.95rem; }
+    .hero { background:linear-gradient(115deg,rgba(4,17,30,.96),rgba(13,41,67,.9)),radial-gradient(circle at 80% 20%,#285c7c,transparent 45%); color:white; }
+    .hero-inner { max-width:1120px; margin:auto; padding:78px 22px 84px; display:grid; grid-template-columns:1.25fr .75fr; gap:45px; align-items:center; }
+    .eyebrow { color:var(--gold); font-weight:800; text-transform:uppercase; letter-spacing:2px; font-size:.82rem; }
+    h1 { font-size:clamp(2.4rem,6vw,4.5rem); line-height:1.05; margin:14px 0 20px; letter-spacing:-1.5px; }
+    .hero p { color:#e1e9f0; font-size:1.13rem; max-width:620px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+    .btn { display:inline-block; padding:13px 19px; border-radius:8px; font-weight:800; text-decoration:none; }
+    .btn-gold { background:var(--gold); color:#071a2c; }
+    .btn-outline { border:1px solid #aebdca; color:white; }
+    .hero-card { border:1px solid rgba(255,255,255,.17); background:rgba(255,255,255,.07); padding:28px; border-radius:18px; box-shadow:0 18px 45px rgba(0,0,0,.16); }
+    .hero-card .bigbolt { font-size:3rem; color:var(--gold); }
+    .hero-card h2 { margin:8px 0; font-size:1.5rem; }
+    .hero-card p { font-size:1rem; margin-bottom:0; }
+    section { padding:66px 22px; }
+    .container { max-width:1120px; margin:auto; }
+    .section-head { max-width:700px; margin:0 auto 35px; text-align:center; }
+    .section-head h2 { color:var(--navy); font-size:clamp(1.8rem,4vw,2.6rem); margin:8px 0 12px; line-height:1.15; }
+    .section-head p { color:#596777; margin:0; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { border:1px solid #e0e7ed; padding:25px; border-radius:14px; background:white; box-shadow:0 8px 24px rgba(7,26,44,.05); }
+    .icon { width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background:#fff3c4; font-size:1.5rem; }
+    .card h3 { margin:15px 0 8px; color:var(--navy); }
+    .card p { color:#596777; margin:0; }
+    .why { background:#f3f7fa; }
+    .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center; }
+    .why h2 { color:var(--navy); font-size:clamp(1.8rem,4vw,2.6rem); line-height:1.15; margin:8px 0 15px; }
+    .checks { padding:0; list-style:none; }
+    .checks li { margin:12px 0; font-weight:700; }
+    .checks li::before { content:"✓"; color:#9b7400; font-weight:900; margin-right:10px; }
+    .callout { background:var(--navy); color:white; border-radius:18px; padding:30px; }
+    .callout h3 { font-size:1.6rem; margin-top:0; }
+    .callout p { color:#d4e0e9; }
+    .contact { background:var(--navy2); color:white; text-align:center; }
+    .contact h2 { font-size:clamp(2rem,4vw,2.8rem); margin:8px 0 12px; }
+    .contact p { color:#d4e0e9; max-width:650px; margin:0 auto 22px; }
+    footer { background:#04111e; color:#c7d3df; text-align:center; padding:22px; font-size:.9rem; }
+    .small { font-size:.88rem; color:#657383; }
+    @media (max-width:760px) {
+      .nav { align-items:flex-start; flex-direction:column; }
+      .navlinks { width:100%; flex-wrap:wrap; gap:14px; }
+      .hero-inner { grid-template-columns:1fr; padding-top:55px; }
+      .hero-card { max-width:480px; }
+      .cards { grid-template-columns:1fr; }
+      .why-grid { grid-template-columns:1fr; }
+      section { padding:52px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Residential &amp; Commercial Electrical Services</div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="brand"><span class="bolt">ϟ</span><span>BRIGHT LIGHT<br>ELECTRIC</span></div>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#about">Why Choose Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Powering homes. Supporting businesses.</div>
+          <h1>Reliable Electrical Work. Bright Solutions.</h1>
+          <p>From everyday electrical repairs to business electrical projects, Bright Light Electric is here to help you plan your next job with confidence.</p>
+          <div class="actions">
+            <a class="btn btn-gold" href="#contact">Request an Estimate</a>
+            <a class="btn btn-outline" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="bigbolt">⚡</div>
+          <h2>Home &amp; Business Electrical Services</h2>
+          <p>Clear communication, careful work, and solutions tailored to your property's needs.</p>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What We Do</div>
+          <h2>Electrical Services for Every Space</h2>
+          <p>Whether you need help at home or at your place of business, let's talk about your project.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">🏠</div><h3>Residential Electrical</h3><p>Electrical repairs, lighting, switches, outlets, upgrades, and other home electrical needs.</p></article>
+          <article class="card"><div class="icon">🏢</div><h3>Commercial Electrical</h3><p>Electrical service and project support for offices, shops, and other commercial properties.</p></article>
+          <article class="card"><div class="icon">💡</div><h3>Lighting &amp; Upgrades</h3><p>Lighting improvements, fixture installation, and electrical updates to suit your space.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="why" id="about">
+      <div class="container why-grid">
+        <div>
+          <div class="eyebrow">Why Bright Light Electric</div>
+          <h2>Service You Can Feel Good About</h2>
+          <p>Electrical work should be explained clearly and handled with care. We aim to make it easy to understand your options and take the next step on your project.</p>
+          <ul class="checks">
+            <li>Residential and commercial service</li>
+            <li>Clear project communication</li>
+            <li>Solutions matched to your needs</li>
+            <li>Contact us to discuss your estimate</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h3>Have an electrical project in mind?</h3>
+          <p>Tell us what you need help with. Get in touch to discuss the work and arrange the next step.</p>
+          <a class="btn btn-gold" href="#contact">Let's Talk</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="eyebrow">Get in Touch</div>
+        <h2>Let's Get Your Project Powered Up.</h2>
+        <p>Contact Bright Light Electric to discuss residential or commercial electrical work and request an estimate.</p>
+        <p><strong>Phone:</strong> Add your business phone number<br><strong>Email:</strong> Add your business email<br><strong>Service area:</strong> Add your city and surrounding areas</p>
+        <p class="small">Before publishing, replace the contact placeholders above with your real business details.</p>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Bright Light Electric. All rights reserved.</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
